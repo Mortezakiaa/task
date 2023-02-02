@@ -1,0 +1,25 @@
+$color-nav-li:rgb(97, 94, 94);
+$color-nav-button:rgb(54, 52, 52);
+
+
+@mixin like-img{
+    position: absolute !important;
+    left: 10px !important;
+    top: 10px !important;
+}
+
+@mixin location{
+    background-color: #fff !important;
+    border-radius: 3px !important;
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 15px !important;
+}
+
+@mixin round-text{
+    padding: 4px;
+    border: 1px solid #aaa !important;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}

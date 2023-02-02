@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap 5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   <nav>
+    <div class="container">
+       <div class="d-flex justify-content-between align-items-center py-3">
+            <ul class="nav-right-side p-0 gap-5 m-0 d-flex justify-content-between align-items-center">
+                <div class="brand-side">
+                    <li>
+                        <a href="#" class="logo d-flex align-items-center">
+                            <img src="imgaes/Sign.png" alt="nav-logo">
+                            <span class="fw-bold fs-3">متراژ</span>
+                        </a>
+                    </li>
+                </div>
+                <div class="link-side d-none d-xl-flex align-items-center gap-3">
+                    <li>
+                        <a href="#" class="fw-semibold">خرید</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fw-semibold">اجاره</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fw-semibold">املاک روی نقشه</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fw-semibold">درخواست مشاور</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="left-side d-none d-xl-flex align-items-center gap-3">
+                <a href="#" class="login-account">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="me-2">ورود به حساب</span>
+                </a>
+                <div class="input-side position-relative d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="نام منطقه و محله و...">
+                    <button type="button" class="position-absolute rounded px-3 border-0">
+                        <i class="fa fa-search text-white"></i>
+                    </button>
+                </div>
+                <a href="#" class="home d-flex align-items-center bg-primary px-3 p-2 rounded-3">
+                    <img src="imgaes/home light.png" alt="home-logo">
+                    <span class="text-white">ثبت رایگان ملک</span>
+                </a>
+            </div>
+            <div class="menu-side d-xl-none">
+                <button class="btn d-flex flex-column gap-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header" dir="ltr">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex flex-column gap-5">
+                            <div class="brand-side">
+                                <li>
+                                    <a href="#" class="logo d-flex align-items-center">
+                                        <img src="imgaes/Sign.png" alt="nav-logo">
+                                        <span class="fw-bold fs-3">متراژ</span>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="link-side d-flex flex-column gap-3">
+                                <li>
+                                    <a href="#" class="fw-semibold">خرید</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fw-semibold">اجاره</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fw-semibold">املاک روی نقشه</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fw-semibold">درخواست مشاور</a>
+                                </li>
+                            </div>
+                            <div class="left-side d-flex flex-column gap-4">
+                                <a href="#" class="login-account">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="me-2">ورود به حساب</span>
+                                </a>
+                                <div class="input-side position-relative d-flex align-items-center">
+                                    <input type="text" class="form-control" placeholder="نام منطقه و محله و...">
+                                    <button type="button" class="position-absolute rounded px-3 border-0">
+                                        <i class="fa fa-search text-white"></i>
+                                    </button>
+                                </div>
+                                <a href="#" class="home d-flex align-items-center justify-content-center gap-1 bg-primary px-3 p-2 rounded-3">
+                                    <img src="imgaes/home light.png" alt="home-logo">
+                                    <span class="text-white">ثبت رایگان ملک</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+   </nav>
+
+   <section class="row1">
+        <section class="container">
+            <section class="d-flex gap flex-wrap flex-md-nowrap side">
+                <div class="img-side d-flex flex-column gap-3">
+                    <div class="cards shadow rounded d-flex align-items-center justify-content-between">
+                         <div class="img-round"></div> 
+                         <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <span class="text-muted text-start">محاسبه</span>
+                                <p class="text-dark">آنلاین کمیسیون</p>
+                            </div>
+                         </div> 
+                    </div>
+                    <div class="cards rounded d-flex align-items-center justify-content-between">
+                        <div class="img-round"></div> 
+                        <div class="d-flex">
+                           <div class="d-flex flex-column">
+                               <span class="text-muted text-start">درخواست</span>
+                               <p class="text-dark">آنلاین قرارداد</p>
+                           </div>
+                        </div> 
+                   </div>
+                </div>
+                <div class="mt-lg-4 mt-0">
+                    <p class="text-md fs-5">
+                        با<span class="text-primary fs-3 fw-bold">متراژ</span>معاملات با کیفیت ،شفاف،آسان و ارزان داشته باشید ... 
+                    </p>
+                </div>
+            </section>
+        </section>
+   </section>
+
+    <section class="row2">
+        <section class="container">
+            <section class="d-flex flex-column gap-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5>آخرین آگهی های خرید و فروش</h5>
+                    <div class="d-flex align-items-center gap-3">
+                        <div>
+                           <span class="text-dark">1</span><span>/</span><span class="text-muted">3</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn border rounded-circle"><i class="align-middle fa fa-angle-right"></i></button>
+                            <button type="button" class="btn border rounded-circle"><i class="align-middle fa fa-angle-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3 gap-xl-3 gap-lg-3 gap-md-5 justify-content-md-center flex-sm-column flex-md-row flex-md-wrap flex-lg-nowrap w-100">
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 d-flex me-md-5 me-lg-0">
+                    <a href="#" class="btn bg-transparent border-dark px-3">
+                        <span>مشاهده همه</span>
+                        <span class="me-2"><i class="fa fa-angle-left"></i></span>
+                    </a>
+                </div>
+            </section>
+        </section>    
+    </section>
+
+    <section class="row3">
+        <section class="container">
+            <section class="d-flex flex-lg-row flex-column gap-5">
+                <div class="d-flex flex-column col-lg-6">
+                    <span class="text-muted">درخواست آنلاین قرارداد</span>
+                    <h1>صدور قرارداد رسمی با کد پیگیری و دریافت 65% تخفیف در کمیسیون</h1>
+                    <div class="divider bg-primary mt-3"></div>
+                    <p  class="text-muted mt-5">
+                        احتمالا برایتان پیش آمده که مشتری یا ملک مورد نظرتان را 
+                        از طریق آشنایان یاوب سایت دیوار پیداکرده اید و حالا 
+                        برای نوشتن قرارداد ابهام داشتید که چگونه ثبت کنید.
+                         بدین منظور کافیست در متراژ درخواست قرارداد
+                         ثبت کنید تا کارشناسان ما با شما تماس بگیرند
+                         و پس از مراتب قانونی ، آن قرارداد همراه با کد رهگیری و 
+                        هولوگرام برایتان ثبت می شود علاوه برآن <span class="text-dark fw-semibold">65% تخفیف</span> درکمیسمون هم دریافت می کنید. بعد از ثبت درخواست قرارداد، کارشناسان متراژ با شماتماس گرفته وجلسه ای با هردوطرف قرارداد هماهنگ میشود. روز قرارداد، در متراژ میزبان شما هستیم و مدیران قرارداد مجرب ما به شما برایعقد قرارداد رسمی و بدون مشکل کمک خواهند کرد در روز قرارداد با توجه به معامله و نوع قرارداد یکی از مدیران قرارداد متراژ برای عقد قرارداد در کنار شما خواهند بود.
+                    </p>
+                    <a href="#" class="btn btn-primary px-3 align-self-start">
+                        <img src="imgaes/contract.png" alt="contract">
+                        <span class="text-white">درخواست آنلاین قرارداد</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-column justify-content-center gap-4 col-lg-5">
+                    <div class="placard col-10 d-flex justify-content-between me-3 p-3 rounded-4">
+                        <div class="d-flex gap-3">
+                            <div class="bg-round bg-primary"></div>
+                            <div class="">
+                                <h6 class="fw-bolder">رضا کبیر هستم</h6>
+                                <p class="fw-light">مدیر قرارداد متراژ</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="text-success fw-bold fs-1">+ 150</span>
+                            <div>
+                                <span>قرارداد</سp>
+                                <p>موفق</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="placard  d-flex align-items-center gap-3 py-3 px-2 rounded-4">
+                        <div class="d-flex gap-3">
+                            <div class="bg-round bg-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-dark fw-bold">
+                                ما <span class="text-primary">امنیت قرارداد</span> شما را تضمین می کنیم!
+                            </p>
+                            <span class="text-muted">
+                                تاکنون بیش از 250 قرارداد موفق در متراژ ثبت شده است.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="placard col-10 d-flex justify-content-between me-3 p-3 rounded-4">
+                        <div class="d-flex gap-3">
+                            <div class="bg-round bg-primary"></div>
+                            <div class="">
+                                <h6 class="fw-bolder">هومن شریف هستم</h6>
+                                <p class="fw-light">مدیر قرارداد متراژ</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="text-success fw-bold fs-1">+ 100</span>
+                            <div>
+                                <span>قرارداد</سp>
+                                <p>موفق</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <main>
+        <section class="container">
+            <section class="d-flex flex-column gap-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5>آخرین آگهی های رهن و اجاره</h5>
+                    <div class="d-flex align-items-center gap-3">
+                        <div>
+                           <span class="text-dark">1</span><span>/</span><span class="text-muted">5</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn border rounded-circle"><i class="align-middle fa fa-angle-right"></i></button>
+                            <button type="button" class="btn border rounded-circle"><i class="align-middle fa fa-angle-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-3 gap-xl-3 gap-lg-3 gap-md-5 justify-content-md-center flex-sm-column flex-md-row flex-md-wrap flex-lg-nowrap w-100">
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="position-relative">
+                            <img src="imgaes/Bg.png" class="card-img-top" alt="home">
+                            <img src="imgaes/Vector (Stroke).png" class="img-fluid like-img" alt="heart-img">
+                            <div class="d-flex location px-2">
+                                <img src="imgaes/location.png" alt="location">
+                                <span class="text-muted">جردن</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-end p-0 mt-2">
+                          <div class="d-flex gap-2 align-items-center">
+                            <span class="text-muted">آپارتمان</span>
+                            <span class="text-muted round-text">امروز</span>
+                          </div>
+                          <h5 class="card-title mt-1">فروش آپارتمان 160متری</h5>
+                          <div class="d-flex gap-3">
+                                <div>
+                                    <img src="imgaes/plan.png" alt="plan">
+                                    <span class="text-muted">160متر</span>
+                                </div>
+                                <div>
+                                    <img src="imgaes/bedroom.png" alt="plan">
+                                    <span class="text-muted">4 متری</span>
+                                </div>
+                          </div>
+                          <p class="card-text text-primary mt-1">15میلیارد</p>            
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 d-flex me-md-5 me-lg-0">
+                    <a href="#" class="btn bg-transparent border-dark px-3">
+                        <span>مشاهده همه</span>
+                        <span class="me-2"><i class="fa fa-angle-left"></i></span>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="bootstrap 5.2/js/bootstrap.bundle.min.js"></script>
+</html>

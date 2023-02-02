@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Shabnam-bold;
+    src: url(../Shabnam.Font.4.0.0_YasDL.com/Shabnam.ttf);
+}
+
+body {
+    direction: rtl !important;
+    font-family: Shabnam-bold !important;
+    min-width: 330px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+li{
+    list-style-type: none !important;
+}
+
+nav{
+    .nav-right-side{
+        .logo{
+            span{
+                font-family: Shabnam-bold !important;
+            }
+        }
+
+        .link-side{
+            @media(max-width:1200px){
+                display: none !important;
+            }
+            li{
+                a{
+                    color: $color-nav-li;
+                }
+            }
+        }
+    }
+
+    .left-side{
+       
+        .login-account{
+            color: $color-nav-li !important;
+        }
+
+        .input-side{
+            input{
+                padding: 8px  !important;
+                &::placeholder{
+                    font-size: 14px !important;
+                }
+            }
+
+
+            button{
+                left: 0 !important;
+                background-color: $color-nav-button !important;
+                padding: 8px;
+            }
+        }
+
+        .home{
+            img{
+                filter: invert(100%);
+            }
+        }
+    }
+
+    .menu-side{
+        button{
+            .line{
+                width: 25px !important;
+                background-color: #000 !important;
+                height: 2px !important;
+            }
+        }
+    }
+}
+
+.row1{
+    top: 100px !important;
+    width: 96% !important;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    right: 4% !important;
+    height: 400px !important;
+    background-image: url(../imgaes/hasanabad.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .side{
+        top: -80px;
+        position: absolute;
+    }
+    
+    .gap{
+        gap: 100px !important;
+    }
+
+    @media(max-width:768px){
+        .text-md{
+            color: #fff !important;
+        }
+    }
+
+    .img-side{
+        .img-round{
+            background-color: #000;
+            width: 100px;
+            height: 100px;
+            border-radius:50% !important;
+        }
+
+        .cards{
+            width: 300px;
+            height: 150px;
+            padding: 20px;
+            background-color: #fff !important;
+        }
+
+        .shadow{
+            box-shadow: 5px 5px 20px #aaa;
+        }
+    }
+}
+
+.row2{
+    position: relative;
+    top: 200px !important;
+
+    .card{
+        .like-img{
+           @include like-img;
+        }
+        .location{
+            @include location;
+        }
+
+        .round-text{
+            @include round-text;
+        }
+
+    }
+}
+
+.row3{
+    position: relative !important;
+    top: 300px !important;
+    
+    .divider{
+        width: 50px;
+        height: 2px;
+    }
+
+    .placard{
+        background-color: #fff;
+        box-shadow: 5px 5px 10px #aaa !important;
+    }
+
+    .bg-round{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+main{
+    position: relative;
+    top: 450px;
+    .card{
+        .like-img{
+           @include like-img;
+        }
+        .location{
+            @include location;
+        }
+
+        .round-text{
+            @include round-text;
+        }
+    }
+
+}
